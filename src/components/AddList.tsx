@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, Dispatch, SetStateAction } from "react";
 
 import { Programming as ProgrammingProps } from "../App";
 
@@ -20,9 +20,7 @@ import { Programming as ProgrammingProps } from "../App";
 // This is better!
 type PProps = {
   languages: ProgrammingProps["languages"];
-  setLanguages: React.Dispatch<
-    React.SetStateAction<ProgrammingProps["languages"]>
-  >;
+  setLanguages: Dispatch<SetStateAction<ProgrammingProps["languages"]>>;
 };
 
 let counter = 1;
